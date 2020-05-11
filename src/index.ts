@@ -1,15 +1,11 @@
 import * as express from 'express';
 import { Request, Response } from 'express';
-import { database } from './lib/database';
+import { router } from './app/routers'
 
-const app = express();
+const app: express.Application = express();
 const { PORT = 3000 } = process.env;
 
-app.get('/', async (req: Request, res: Response) => {
-  res.json({
-    message: 'hello world',
-  });
-});
+app.use(router);
 
 app.listen(PORT, () => {
   console.log(`server started at http://localhost:${PORT}`);
