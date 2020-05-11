@@ -12,7 +12,7 @@ exports.seed = (knex) => {
     {
       title: 'Flat 2',
       price: 150000,
-      floorArean: 55,
+      floorArea: 55,
       country: 'Hungary',
       zip: 1132,
       city: 'Budapest',
@@ -21,7 +21,7 @@ exports.seed = (knex) => {
     {
       title: 'Flat 3',
       price: 300000,
-      floorArean: 75,
+      floorArea: 75,
       country: 'Hungary',
       zip: 6726,
       city: 'Szeged',
