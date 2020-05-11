@@ -3,7 +3,7 @@ exports.seed = (knex) => {
     {
       title: 'Flat 1',
       price: 80000,
-      floorArean: 40,
+      floorArea: 40,
       country: 'Hungary',
       zip: 6720,
       city: 'Szeged',
